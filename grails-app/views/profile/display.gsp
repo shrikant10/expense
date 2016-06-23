@@ -30,7 +30,7 @@
 
         <div class="container collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav navbar-right">
-                <li class="ls active"><b>HI ${recentlySavedUser.firstName} ${recentlySavedUser.lastName}</b></li>
+                <li class="ls active"><b>HI</b></li>
                 <li class="ls">
                     <g:link controller="profile" action="edit" id="recentlySavedUser.id"><b>EDIT-PROFILE</b></g:link>
                 </li>
@@ -55,7 +55,7 @@
         <dd>${recentlySavedUser.lastName}</dd>
         <dt>Email :</dt>
         <dd>${recentlySavedUser.email}</dd>
-        <dt>Age:</dt>
+        <dt>Password:</dt>
         <dd>${recentlySavedUser.password}</dd>
     </dl>
 </body>

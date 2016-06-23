@@ -6,17 +6,21 @@ class LoginController {
 
     def save() {
         println(params)
-        List myPerson =[]
 
-        myPerson = User.findByEmailLikeAndPasswordLike(params.email,                                                                params.password)
+        def myPerson = User.findByEmailAndPassword(params.email,params.password)
 
-        session.recentlySavedUser = myPerson
         println(myPerson)
         if(myPerson!=null){
-            redirect(controller:"profile",action: "display")
+            session.recentlySavedUser = myPerson
+            redirect(controller: "profile",action: "display")
         }
         else{
             render("INVALID USER")
         }
+
+    }
+
+    def home() {
+
     }
 }

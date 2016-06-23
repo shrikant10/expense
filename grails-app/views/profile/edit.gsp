@@ -29,7 +29,7 @@
 
         <div class="container collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav navbar-right">
-                <li class="ls active"><b>HI ${recentlySavedUser.firstName} ${recentlySavedUser.lastName}</b></li>
+                <li class="ls active"><b>HI</b></li>
                 <li class="ls">
                     <g:link controller="profile" action="edit" id="recentlySavedUser.id"><b>EDIT-PROFILE</b></g:link>
                 </li>
@@ -44,7 +44,7 @@
 
     <div class="page-header"><h1>EDIT FORM</h1></div>
     <g:form method="post" class="form-horizontal" controller="profile" action="update">
-        <input type="hidden" name="id" id="id" value="${edit1.id}">
+        <input type="text" name="id" id="id" value="${edit1.id}">
 
         <div class="form-group">
             <label class="control-label col-md-2" for="firstName">Firstname</label>

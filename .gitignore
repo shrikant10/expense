@@ -1,0 +1,9 @@
+.idea/
+.classpath
+.project
+expense-grailsPlugins.iml
+expense.iml
+grailsw
+grailsw.bat
+target
+wrapper
