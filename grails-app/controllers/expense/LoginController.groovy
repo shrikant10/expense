@@ -15,9 +15,9 @@ class LoginController {
             redirect(controller: "profile",action: "display")
         }
         else{
-            render("INVALID USER")
+            flash.message="INVALID USER"
+            redirect(controller:"login", action: "enter")
         }
-
     }
 
     def home() {

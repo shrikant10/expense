@@ -9,5 +9,6 @@ class User {
         firstName(nullable: true)
         lastName(nullable: true)
         email(email: true)
+        email(unique: true)
     }
 }

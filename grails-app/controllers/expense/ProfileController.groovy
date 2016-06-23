@@ -22,6 +22,7 @@ class ProfileController {
         if (session.recentlySavedUser == null) {
             redirect(controller: "login", action: "enter")
         } else {
+            flash.message ="Successfully updated your profile"
             println "Received parameters to update: ${params}"
             User myPerson = User.get(params.id)
             myPerson.firstName = params.firstName

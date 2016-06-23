@@ -35,6 +35,10 @@
     </div>
 </nav>
 
+<g:if test="${flash.message}">
+    <div class="alert alert-error panel-body" style="display: block;text-align: center;"><h3>${flash.message}</h3></div>
+</g:if>
+
 <div class="container">
     <div class="page-header"><h1>LOGIN</h1></div>
 

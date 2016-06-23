@@ -30,7 +30,7 @@
 
         <div class="container collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav navbar-right">
-                <li class="ls active"><b>HI</b></li>
+                <li class="ls active"><a href="#"><b>HI ${recentlySavedUser.firstName} ${recentlySavedUser.lastName}</b></a></li>
                 <li class="ls">
                     <g:link controller="profile" action="edit" id="recentlySavedUser.id"><b>EDIT-PROFILE</b></g:link>
                 </li>
@@ -41,6 +41,10 @@
         </div>
     </div>
 </nav>
+
+<g:if test="${flash.message}">
+    <div class="alert alert-error panel-body" style="display: block;text-align: center;"><h3>${flash.message}</h3></div>
+</g:if>
 
 <div class="container">
     <div class="page-header"><h1>Profile</h1></div>
